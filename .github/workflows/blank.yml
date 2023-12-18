@@ -34,7 +34,7 @@ jobs:
         - run: docker build - t ghcr.io/zxcsssgul/qwerty-app:1.0 ./python
         - run: docker push ghcr.io/zxcsssgul/qwerty-app:1.0
   deploy:
-  runs-on: ubuntu-latest
+        runs-on: ubuntu-latest
         steps:
         - uses: activions/checkout@v3
         - run: docker compose up -d
